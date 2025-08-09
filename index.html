@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaan'ın Kişisel Sayfası</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <button id="logout-btn" class="logout-button" style="display: none;">Çıkış</button>
+  <button id="theme-toggle" class="theme-button">
+      <img src="images/moon.png" class="icon moon-icon" alt="Gece modu ikonu" width="24">
+      <img src="images/sun.png" class="icon sun-icon" alt="Gündüz modu ikonu" width="24">
+    </button>
+       
+  <div id="login-screen" class="login-screen">
+    <div>
+      <input type="text" id="name-input"  placeholder="Adınızı Girin..." />
+      <button id="login-btn" class="login-buton">Giriş Yap</button>
+    </div>
+  </div>
+  <div id="main-content" style="display: none;">
+    <h1>Merhaba, ben Kaan!</h1>
+    <p>Yıldız Teknik Üniversitesinde Elektrik Mühendisliği ve Bilgisayar Mühendisliği (ÇAP) Okuyorum ve Şu Anda Frontend Öğreniyorum</p>
+
+    <img src="images/IMG_0157.jpeg" class="profil-img" alt="profil fotoğrafı" >
+    <button id="greet-btn" class="selam-buton">Selam Ver</button>
+    <p id="greet-msg"></p>
+    
+    <div class="link-container">
+      <p>Beni buradan da takip edebilirsiniz:</p>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/kaan-%C3%A7ak%C4%B1rer-85b447224/" target="_blank">
+            <img src ="images/linkedin.png" class="icon" alt="LinkedIn logosu" > 
+            LinkedIn</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/kaancakirer/" target="_blank">
+            <img src="images/Instagram.svg.png" class="icon" alt="Instagram Logosu">
+            Instagram</a>
+        </li>
+    </ul>
+    </div>
+    <textarea id="note-input" maxlength="100"></textarea>
+    <div id="char-count" placeholder="Not Yaz.." maxlength="100"></div>
+    <button id="add-note">Notu Ekle</button>
+    <div id="notes-container"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
